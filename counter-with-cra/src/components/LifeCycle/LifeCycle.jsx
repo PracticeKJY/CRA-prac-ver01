@@ -63,7 +63,7 @@ class LifeCycle extends Component {
     });
   }
 
-  //componentDidUpdate => state
+  //componentDidUpdate => render()의 이벤트가 실행될때마다 {} 값을 랜더링시켜줌
   componentDidUpdate() {
     console.log("우리 컴포넌트가 변경되었어요~");
   }
