@@ -1,6 +1,6 @@
 // 함수컴포넌트 a-z 만들어보기
 
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "./Counter.module.css";
 //  props => { count : 2}
 // prop.count =2 value
@@ -8,7 +8,7 @@ import styles from "./Counter.module.css";
 
 function Counter({ min = 1, max = 10, step = 1, count: initialCount = 1 }) {
   // 함수컴포넌트에서 상태변화시킬려면 뭘 선언해줬어야했죠?
-  let [count, setState] = useState(initialCount);
+  const [count, setState] = useState(initialCount);
 
   // let [count, setState] =  [2,f()]
   // let count = 2

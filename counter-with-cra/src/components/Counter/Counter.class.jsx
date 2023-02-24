@@ -16,7 +16,7 @@ class Counter extends Component {
   render() {
     const { count } = this.state;
 
-    console.log(this.state);
+    // console.log(this.state);
 
     return (
       <div className={styles.container}>
